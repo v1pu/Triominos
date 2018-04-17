@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vipu.triominos.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:context="com.example.vipu.Triominos.MainActivity">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Player 1"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/display_player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/add0for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add0for1"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/add1for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add1for1"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/add2for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add2for1"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/add3for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add3for1"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/add4for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add4for1"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/add5for1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add5for1"
+                    android:text="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-235dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/add10for1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add10for1"
+                    android:text="+10" />
+
+                <Button
+                    android:id="@+id/add40for1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="add40for1"
+                    android:text="+40" />
+
+                <Button
+                    android:id="@+id/add50for1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="add50for1"
+                    android:text="+50" />
+
+                <Button
+                    android:id="@+id/sub5for1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="sub5for1"
+                    android:text="-5" />
+
+                <Button
+                    android:id="@+id/sub10for1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="sub10for1"
+                    android:text="-10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            tools:context="com.example.vipu.Triominos.MainActivity">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Player 2"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/display_player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="120dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/add0for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add0for2"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/add1for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add1for2"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/add2for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add2for2"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/add3for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                          android:onClick="add3for2"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/add4for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add4for2"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/add5for2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="add5for2"
+                    android:text="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="-235dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/add10for2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+
+                    android:onClick="add10for2"
+                    android:text="+10" />
+
+                <Button
+                    android:id="@+id/add40for2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="add40for2"
+                    android:text="+40" />
+
+                <Button
+                    android:id="@+id/add50for2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="add50for2"
+                    android:text="+50" />
+
+                <Button
+                    android:id="@+id/sub5for2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="sub5for2"
+                    android:text="-5" />
+
+                <Button
+                    android:id="@+id/sub10for2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:onClick="sub10for2"
+                    android:text="-10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:onClick="resetScore"
+        android:layout_marginBottom="32dp"/>
+</RelativeLayout>
